@@ -11,6 +11,16 @@ public class Word {
     private int image=NoImage;
     private int audio=0;
 
+    @Override
+    public String toString() {
+        return "Word{" +
+                "english='" + english + '\'' +
+                ", miwok='" + miwok + '\'' +
+                ", image=" + image +
+                ", audio=" + audio +
+                '}';
+    }
+
     public Word(String text1, String text2, int music){
         english = text1;
         miwok=text2;
